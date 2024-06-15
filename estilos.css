@@ -85,7 +85,23 @@ main{
 }*/
 
 /* Media Queries para pantallas pequeñas */
-@media (max-width: 550px) {
+@media (min-width:834px) {
+    main{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .mensaje{
+        margin-left: 0px;
+    }
+
+    .botones2{
+        margin-left: 30px;
+    }
+}
+
+@media(min-width:1440px) {
     main{
         display: flex;
         flex-wrap: wrap;
