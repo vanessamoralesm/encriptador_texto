@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+</head>
+<body class="fondo">
+    
+    <header>
+        <img  class="logo" src="logo.png" alt="logo">
+        <h1>Encriptador de texto</h1>
+       
+    </header>
+
+    <main>
+        <section>
+            <textarea class="text-area" cols="30" rows="10" placeholder="Escriba el texto aqui"></textarea>
+
+            <div class="info">
+                <img class="signo" src="signo.png" alt="signo">
+                <h6 >solo letras minusculas y sin acentos</h6>
+            </div>
+
+            <div class="botones">
+                <button id=btn-encriptar type="button" class="btn btn-danger" onclick="botonEncriptar()">ENCRIPTAR</button>
+                <button id="btn-desencriptar" type="button" class="btn btn-warning" onclick="botondesencriptar()">DESENCRIPTAR</button>
+            </div>
+
+        </section>
+
+        <section>
+
+            <textarea class="mensaje" cols="30" rows="10"></textarea>
+
+            <div class="botones2">
+                <button id="btn-copiar" type="button" class="btn btn-success" onclick="botoncopiar()">COPIAR</button>
+                <button id="btn-borrar" type="button" class="btn btn-secondary" onclick="borrarmensaje()">BORRAR</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="funciones.js"></script>
+</body>
+<footer>
+
+
+</footer>
+</html> 
