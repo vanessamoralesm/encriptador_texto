@@ -85,12 +85,13 @@ main{
 }*/
 
 /* Media Queries para pantallas pequeñas */
-@media (min-width:834px) {
+
+@media (max-width:480px) {
     main{
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 70px;
+        justify-content: flex-start;
+
     }
     .mensaje{
         margin-left: 0px;
@@ -101,12 +102,12 @@ main{
     }
 }
 
-@media(min-width:1440px) {
+/*Media Queries para tablets */
+@media(max-width:768px) {
     main{
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        gap: 70px;
+        gap: 30px;
     }
     .mensaje{
         margin-left: 0px;
